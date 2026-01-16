@@ -1,22 +1,11 @@
 import React from 'react'
 import Container from './Container'
-import Flex from './Flex'
-import { HiHome } from "react-icons/hi2";
 import { BsFillPersonFill } from "react-icons/bs";
-import { FaMoon } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
 import { FaBook } from "react-icons/fa6";
 import { MdOutlineSms } from "react-icons/md";
-import ShinyText from '../Componets/ShinyText ';
 import { FloatingDock } from "../Componets/floating-dock";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
+import {IconHome} from "@tabler/icons-react";
 
 
 
@@ -33,87 +22,43 @@ const Navber = () => {
         {
           title: "Products",
           icon: (
-            <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <BsFillPersonFill  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
         {
           title: "Components",
           icon: (
-            <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <MdOutlineWork className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
         {
           title: "Aceternity UI",
           icon: (
-            <img
-              src="https://assets.aceternity.com/logo-dark.png"
-              width={20}
-              height={20}
-              alt="Aceternity Logo" />
+            <FaBook className='h-full w-full text-neutral-500 dark:text-neutral-300' />
           ),
           href: "#",
         },
-        {
-          title: "Changelog",
-          icon: (
-            <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ),
-          href: "#",
-        },
-    
         {
           title: "Twitter",
           icon: (
-            <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <MdOutlineSms  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },
-        {
-          title: "GitHub",
-          icon: (
-            <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ),
-          href: "#",
-        },
+
       ];
   return (
     <>
         <nav className=' '>
             <Container>
-                <Flex className='justify-between items-center px-5 mt-10 '>
-                    <div>
-                        <ShinyText
-                        text="✨Emam Gajjali"
-                        speed={2}
-                        delay={0}
-                        color="#A395E9"
-                        shineColor="#ffffff"
-                        spread={120}
-                        direction="left"
-                        yoyo={false}
-                        pauseOnHover={false}
-                        className='text-[20px]'
-                        />
-                    </div>
-                    <ul className='flex gap-10 text-[21px]'>
-                        <li><HiHome /></li>
-                        <li><BsFillPersonFill /></li>
-                        <li><MdOutlineWork /></li>
-                        <li><FaBook /></li>
-                        <li><MdOutlineSms /></li>
-                        <div className="flex items-center justify-center h-[35rem] w-full">
-                              <FloatingDock
-                                // only for demo, remove for production
-                                mobileClassName="translate-y-20"
-                                items={links} />
-                        </div>
-                    </ul>
-                    <div>
-                        <FaMoon />
-                    </div>
-                </Flex>
+              <div className="flex items-center justify-end  absolute bottom-10 right-4 w-full visibility:visible opacity: 1 transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.4s, opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s;">
+                    <FloatingDock
+                      // only for demo, remove for production
+                      mobileClassName="translate-y-30"
+                      items={links} />
+              </div>   
             </Container>
         </nav>
     </>
