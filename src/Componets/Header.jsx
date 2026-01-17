@@ -11,7 +11,7 @@ const Header = () => {
         <Flex className='justify-between mt-10 items-center'>
             <div className='w-full'>
                 <ShinyText
-                text="✨Emam Gajjali"
+                text="✨ Gajjali"
                 speed={2}
                 delay={0}
                 color="#A395E9"
@@ -20,10 +20,10 @@ const Header = () => {
                 direction="left"
                 yoyo={false}
                 pauseOnHover={false}
-                className='text-[20px]'
+                className='text-[20px] font-inter font-bold '
                 />
             </div>
-            <div>
+            <div className='text-[#A395E9]'>
                 <FaMoon />
             </div>
         </Flex>

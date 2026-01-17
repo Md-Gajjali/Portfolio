@@ -53,7 +53,7 @@ const Navber = () => {
     <>
         <nav className=' '>
             <Container>
-              <div className="flex items-center justify-end  absolute bottom-10 right-4 w-full visibility:visible opacity: 1 transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.4s, opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s;">
+              <div className="flex fixed items-center justify-end  absolute bottom-10 right-4 w-full visibility:visible opacity: 1 transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.4s, opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s;">
                     <FloatingDock
                       // only for demo, remove for production
                       mobileClassName="translate-y-30"
